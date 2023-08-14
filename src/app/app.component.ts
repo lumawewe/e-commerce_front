@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'e-commerce';
+  public inAcesso: boolean  = true;
+
+  public inMapa: boolean  = false;
+  public inMessage: boolean  = false;
+  public inProductList: boolean = false;
+  public inProductDetail: boolean = false;
+ 
+  public inHistorySaldo: boolean = false;
+  public inSaldo : boolean =  false;
 }
