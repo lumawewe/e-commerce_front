@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { RelatoriosComponent } from './components/relatorios/relatorios.component';
 import { ProductsForSaleComponent } from './components/products-for-sale/products-for-sale.component';
 import { TermosComponent } from './components/termos/termos.component';
+import { CadastrarProdutoComponent } from './components/cadastrar-produto/cadastrar-produto.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'relatorios', component: RelatoriosComponent },
   { path: 'buy' , component: ProductsForSaleComponent},
-  { path: 'termos' , component: TermosComponent}
+  { path: 'termos' , component: TermosComponent},
+  { path: 'cadastrar-produto' , component: CadastrarProdutoComponent}
 ];
 
 @NgModule({

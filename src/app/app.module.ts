@@ -22,6 +22,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { RelatoriosComponent } from './components/relatorios/relatorios.component';
 import { ProductsForSaleComponent } from './components/products-for-sale/products-for-sale.component';
 import { TermosComponent } from './components/termos/termos.component';
+import { CadastrarProdutoComponent } from './components/cadastrar-produto/cadastrar-produto.component';
+import { ListRegisterProductComponent } from './components/list-register-product/list-register-product.component';
+import { ModalEditarComponent } from './components/list-register-product/modal-editar/modal-editar.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,10 @@ import { TermosComponent } from './components/termos/termos.component';
     NavBarComponent,
     RelatoriosComponent,
     ProductsForSaleComponent,
-    TermosComponent
+    TermosComponent,
+    CadastrarProdutoComponent,
+    ListRegisterProductComponent,
+    ModalEditarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,252 @@
+<div class="page-header">
+    <h3 class="page-title"> Cadastar Produto </h3>
+</div>
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <div class="template-demo">
+                        <form class="row g-3">
+                            <div class="col-md-6 mt-2">
+                                <label for="inputZip" class="form-label">Pais</label>
+                                <div class="input-group">
+                                    <select id="idLevel" name="idLevel" class="form-control btn-square text-white">
+                                        <option value="" *ngFor="let item of listCountry">{{item.name}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2">
+                                <label for="inputZip" class="form-label">Bandeira</label>
+                                <div class="input-group">
+                                    <select id="idBandeira" name="idBandeira"
+                                        class="form-control btn-square text-white">
+                                        <option value="">Todos</option>
+                                        <option value="VISA">VISA</option>
+                                        <option value="MASTERCARD">MASTERCARD</option>
+                                        <option value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+                                        <option value="ELO">ELO</option>
+                                        <option value="AMERICAN EXPRESS COMPANY">AMERICAN EXPRESS COMPANY</option>
+                                        <option value="MAESTRO">MAESTRO</option>
+                                        <option value="DISCOVER">DISCOVER</option>
+                                        <option value="CABAL">CABAL</option>
+                                        <option value="HIPERCARD">HIPERCARD</option>
+                                        <option value="NATIVA">NATIVA</option>
+                                        <option value="RUPAY">RUPAY</option>
+                                        <option value="LOCAL BRAND">LOCAL BRAND</option>
+                                        <option value="CIRRUS">CIRRUS</option>
+                                        <option value="UATP">UATP</option>
+                                        <option value="SODEXO">SODEXO</option>
+                                        <option value="PRIVATE LABEL">PRIVATE LABEL</option>
+                                        <option value="PRIVATE LABEL CARD">PRIVATE LABEL CARD</option>
+                                        <option value="VISA/DANKORT">VISA/DANKORT</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-2">
+                                <label for="inputZip" class="form-label">Tipo</label>
+                                <div class="input-group">
+                                    <select id="idLevel" name="idLevel" class="form-control btn-square text-white">
+                                        <option selected>SELECIONE</option>
+                                        <option value="CREDIT">CREDIT</option>
+                                        <option value="DEBIT">DEBIT</option>
+                                        <option value="CHARGE CARD">CHARGE CARD</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-2">
+                                <label for="inputZip" class="form-label">Observacoes</label>
+                                <div class="input-group">
+                                    <select id="idObservacao" name="idObservacao"
+                                        class="form-control btn-square text-white">
+                                        <option value="">Todos</option>
+                                        <option value="NOME+CPF">NOME+CPF</option>
+                                        <option value="SEM DADOS">SEM DADOS</option>
+                                        <option value="NOME+DNI (CPF)">NOME+DNI (CPF)</option>
+                                        <option value="NOME+EMAIL+TELEFONE+ENDERECO">NOME+EMAIL+TELEFONE+ENDERECO
+                                        </option>
+                                        <option value="NOME+DNI(CPF)">NOME+DNI(CPF)</option>
+                                        <option value="NOME+CPF+NASCIMENTO+TELEFONE">NOME+CPF+NASCIMENTO+TELEFONE
+                                        </option>
+                                        <option value="NOME+TELEFONE+ENDERECO">NOME+TELEFONE+ENDERECO</option>
+                                        <option value="NOME+EMAIL CONTEM *">NOME+EMAIL CONTEM *</option>
+                                        <option value="NOME">NOME</option>
+                                        <option value="NOME+CPF+ENDERECO+TELEFONE">NOME+CPF+ENDERECO+TELEFONE</option>
+                                        <option value="NOME+CPF(POSSIVEL)+EMAIL+TELEFONE+ENDERECO">
+                                            NOME+CPF(POSSIVEL)+EMAIL+TELEFONE+ENDERECO</option>
+                                        <option value="NOME+ENDERECO+TELEFONE+EMAIL">NOME+ENDERECO+TELEFONE+EMAIL
+                                        </option>
+                                        <option value=""></option>
+                                        <option value="NOME+CPF+NASCIMENTO">NOME+CPF+NASCIMENTO</option>
+                                        <option value="NOME+CPF(E OUTROS)">NOME+CPF(E OUTROS)</option>
+                                        <option value="NOME+CPF+ENDERECO">NOME+CPF+ENDERECO</option>
+                                        <option value="NOME+CPF+TELEFONE">NOME+CPF+TELEFONE</option>
+                                        <option value="MUITAS VARIEDADES">MUITAS VARIEDADES</option>
+                                        <option value="NOME+ENDERECO+TELEFONE+EMAIL (CONTEM *)">
+                                            NOME+ENDERECO+TELEFONE+EMAIL (CONTEM *)</option>
+                                        <option value="NOME+EMAIL+TELEFONE+ENDERECO+CPF(POSSIVEL)">
+                                            NOME+EMAIL+TELEFONE+ENDERECO+CPF(POSSIVEL)</option>
+                                        <option value="NOME+EMAIL CONTEM * ( ALGUMS )">NOME+EMAIL CONTEM * ( ALGUMS )
+                                        </option>
+                                        <option value="NOME+CPF+NASCIMENTO+TEL+ENDERECO">
+                                            NOME+CPF+NASCIMENTO+TEL+ENDERECO</option>
+                                        <option value="MUITAS">MUITAS</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2">
+                                <label for="inputCity" class="form-label">Bin</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+
+                            <div class="col-md-2 mt-2">
+                                <label for="inputZip" class="form-label">Banco</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+
+                            <div class="col-md-2 mt-2">
+                                <label for="inputZip" class="form-label">Level</label>
+                                <div class="input-group">
+                                    <select id="idLevel" name="idLevel" class="form-control btn-square text-white">
+                                        <option value="">Todos</option>
+                                        <option value="PLATINUM">PLATINUM</option>
+                                        <option value="STANDARD">STANDARD</option>
+                                        <option value="INFINITE">INFINITE</option>
+                                        <option value="GOLD">GOLD</option>
+                                        <option value="BLACK">BLACK</option>
+                                        <option value="PERSONAL">PERSONAL</option>
+                                        <option value="CLASSIC">CLASSIC</option>
+                                        <option value="BASICO">BASICO</option>
+                                        <option value="PERSONAL GREEN REVOLVE">PERSONAL GREEN REVOLVE</option>
+                                        <option value="EXECUTIVE">EXECUTIVE</option>
+                                        <option value=""></option>
+                                        <option value="BUSINESS">BUSINESS</option>
+                                        <option value="MICRO-BUSINESS">MICRO-BUSINESS</option>
+                                        <option value="EMPRESARIAL">EMPRESARIAL</option>
+                                        <option value="CORPORATE">CORPORATE</option>
+                                        <option value="CORPORATE T&amp;E">CORPORATE T&amp;E</option>
+                                        <option value="NULL">NULL</option>
+                                        <option value="PREPAID BUSINESS">PREPAID BUSINESS</option>
+                                        <option value="CORPORATE GREEN CHARGE">CORPORATE GREEN CHARGE</option>
+                                        <option value="ELECTRON">ELECTRON</option>
+                                        <option value="BASIC">BASIC</option>
+                                        <option value="ENHANCED">ENHANCED</option>
+                                        <option value="SIGNATURE">SIGNATURE</option>
+                                        <option value="PREPAID RELOADABLE">PREPAID RELOADABLE</option>
+                                        <option value="PERSONAL PLATINUM CHARGE">PERSONAL PLATINUM CHARGE</option>
+                                        <option value="PREPAID">PREPAID</option>
+                                        <option value="PERSONAL PLATINUM REVOLVE">PERSONAL PLATINUM REVOLVE</option>
+                                        <option value="PLATINUM/WORLD">PLATINUM/WORLD</option>
+                                        <option value="PERSONAL BLUE REVOLVE">PERSONAL BLUE REVOLVE</option>
+                                        <option value="PLATINUM/STANDARD">PLATINUM/STANDARD</option>
+                                        <option value="WORLD">WORLD</option>
+                                        <option value="WORLD ELITE">WORLD ELITE</option>
+                                        <option value="ELECTRONIC">ELECTRONIC</option>
+                                        <option value="PERSONAL GREEN CHARGE">PERSONAL GREEN CHARGE</option>
+                                        <option value="PREMIUM">PREMIUM</option>
+                                        <option value="TITANIUM">TITANIUM</option>
+                                        <option value="PREPAID CORPORATE T&amp;E">PREPAID CORPORATE T&amp;E</option>
+                                        <option value="NANQUIM">NANQUIM</option>
+                                        <option value="EXECUTIVE BUSINESS">EXECUTIVE BUSINESS</option>
+                                        <option value="PERSONAL GOLD CHARGE">PERSONAL GOLD CHARGE</option>
+                                        <option value="PERSONAL REVOLVE">PERSONAL REVOLVE</option>
+                                        <option value="PERSONAL CHARGE">PERSONAL CHARGE</option>
+                                        <option value="STANDARD/PLATINUM">STANDARD/PLATINUM</option>
+                                        <option value="PLATINUM/WORLD/STANDARD">PLATINUM/WORLD/STANDARD</option>
+                                        <option value="PURCHASING">PURCHASING</option>
+                                        <option value="PERSONAL GOLD REVOLVE">PERSONAL GOLD REVOLVE</option>
+                                        <option value="CIRRUS">CIRRUS</option>
+                                        <option value="CENTURION">CENTURION</option>
+                                        <option value="WORLD BLACK">WORLD BLACK</option>
+                                        <option value="GRCC BLUE">GRCC BLUE</option>
+                                        <option value="GRCC PLATINUM">GRCC PLATINUM</option>
+                                        <option value="PREPAID ELECTRON">PREPAID ELECTRON</option>
+                                        <option value="GRCC GOLD">GRCC GOLD</option>
+                                        <option value="GRCC">GRCC</option>
+                                        <option value="WORLD ELITE BUSINESS">WORLD ELITE BUSINESS</option>
+                                        <option value="GIFT">GIFT</option>
+                                        <option value="ELO MAIS">ELO MAIS</option>
+                                        <option value="FLEET">FLEET</option>
+                                        <option value="WORLD REWARDS">WORLD REWARDS</option>
+                                        <option value="ALIMENTACAO">ALIMENTACAO</option>
+                                        <option value="PREPAID PAYROLL">PREPAID PAYROLL</option>
+                                        <option value="PRIVATE LABEL">PRIVATE LABEL</option>
+                                        <option value="GOLD/PLATINUM">GOLD/PLATINUM</option>
+                                        <option value="ACQUIRER ONLY">ACQUIRER ONLY</option>
+                                        <option value="HSA NON SUBSTANTIATED">HSA NON SUBSTANTIATED</option>
+                                        <option value="REWARDS">REWARDS</option>
+                                        <option value="PREPAID AWARDS">PREPAID AWARDS</option>
+                                        <option value="OPEN GOLD REVOLVE">OPEN GOLD REVOLVE</option>
+                                        <option value="PERSONAL/GRCC">PERSONAL/GRCC</option>
+                                        <option value="UATP">UATP</option>
+                                        <option value="CORPORATE FLEET GSA">CORPORATE FLEET GSA</option>
+                                        <option value="GRAFITE">GRAFITE</option>
+                                        <option value="WORLD ELITE FOR BUSINESS">WORLD ELITE FOR BUSINESS</option>
+                                        <option value="REVOLVE (CONSUMER / SBS)">REVOLVE (CONSUMER / SBS)</option>
+                                        <option value="MULTIPLO">MULTIPLO</option>
+                                        <option value="WORLD FOR BUSINESS">WORLD FOR BUSINESS</option>
+                                        <option value="WORLD SIGNIA">WORLD SIGNIA</option>
+                                        <option value="PLATINUM/GOLD">PLATINUM/GOLD</option>
+                                        <option value="GNS GOLD CHARGE">GNS GOLD CHARGE</option>
+                                        <option value="PURCHASING WITH FLEET">PURCHASING WITH FLEET</option>
+                                        <option value="REVOLVE-CLASSIC/BLUE">REVOLVE-CLASSIC/BLUE</option>
+                                        <option value="BUSINESS ENHANCED">BUSINESS ENHANCED</option>
+                                        <option value="CORPORATE PURCHASING">CORPORATE PURCHASING</option>
+                                        <option value="CANADA CHARGE CARD - GRCC">CANADA CHARGE CARD - GRCC</option>
+                                        <option value="LOTTE CARD">LOTTE CARD</option>
+                                        <option value="QUANTUM">QUANTUM</option>
+                                        <option value="STANDARD UNEMBOSSED">STANDARD UNEMBOSSED</option>
+                                        <option value="NEW WORLD">NEW WORLD</option>
+                                        <option value="MIXED">MIXED</option>
+                                        <option value="COMPANY">COMPANY</option>
+                                        <option value="OPTIMA">OPTIMA</option>
+                                        <option value="INFINITE/SIGNATURE">INFINITE/SIGNATURE</option>
+                                        <option value="GREEN">GREEN</option>
+                                        <option value="SALUTE">SALUTE</option>
+                                        <option value="DEBIT">DEBIT</option>
+                                        <option value="GNS PLATINUM CHARGE">GNS PLATINUM CHARGE</option>
+                                        <option value="VIRTUAL">VIRTUAL</option>
+                                        <option value="DBK - DIGITAL BLACK">DBK - DIGITAL BLACK</option>
+                                        <option value="GOLD/STANDARD">GOLD/STANDARD</option>
+                                        <option value="BUSINESS SIGNATURE">BUSINESS SIGNATURE</option>
+                                        <option value="PREPAID HEALTHCARE">PREPAID HEALTHCARE</option>
+                                        <option value="PREPAID TRAVEL MONEY">PREPAID TRAVEL MONEY</option>
+                                        <option value="SELECT">SELECT</option>
+                                        <option value="COMMERCIAL">COMMERCIAL</option>
+                                        <option value="GOLD/INFINITE/PLATINUM">GOLD/INFINITE/PLATINUM</option>
+                                        <option value="GOVERNMENT COMMERCIAL">GOVERNMENT COMMERCIAL</option>
+                                        <option value="PROPRIETARY">PROPRIETARY</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <div class="template-demo">
+                        <form class="row g-3">
+                            <div class="col-md-12 mt-2">
+                               <app-list-register-product></app-list-register-product>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
