@@ -25,6 +25,9 @@ import { TermosComponent } from './components/termos/termos.component';
 import { CadastrarProdutoComponent } from './components/cadastrar-produto/cadastrar-produto.component';
 import { ListRegisterProductComponent } from './components/list-register-product/list-register-product.component';
 import { ModalEditarComponent } from './components/list-register-product/modal-editar/modal-editar.component';
+import { FinalizarCompraComponent } from './components/nav-bar/finalizar-compra/finalizar-compra.component';
+import { ContaComponent } from './pages/conta/conta.component';
+import { CarteiraComponent } from './pages/carteira/carteira.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +53,10 @@ import { ModalEditarComponent } from './components/list-register-product/modal-e
     TermosComponent,
     CadastrarProdutoComponent,
     ListRegisterProductComponent,
-    ModalEditarComponent
+    ModalEditarComponent,
+    FinalizarCompraComponent,
+    ContaComponent,
+    CarteiraComponent
   ],
   imports: [
     BrowserModule,

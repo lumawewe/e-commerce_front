@@ -1,0 +1,195 @@
+<div class="page-header">
+    <h3 class="page-title"> Minha Conta </h3>
+</div>
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <form class="forms-sample">
+                        <div class="form-group">
+                            <label for="exampleInputName1">Nome</label>
+                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail3">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword4">Senha</label>
+                            <input type="password" class="form-control" id="exampleInputPassword4"
+                                placeholder="********">
+                        </div>
+
+                        <div class="my-2">
+                            <a href="#">Redefinir Senha</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-success my-1">Salvar</button>
+                        <button class="btn btn-secondary mx-2">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Carteira</h4>
+                <div class="card-title">
+                    <app-saldos></app-saldos>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Compras</h4>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <div id="order-listing_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <table id="order-listing" class="table dataTable no-footer" cellspacing="0"
+                                            width="100%" aria-describedby="order-listing_info" style="width: 100%;">
+                                            <thead>
+                                                <tr class="bg-dark text-white">
+                                                    <th class="sorting sorting_asc" tabindex="0"
+                                                        aria-controls="order-listing" rowspan="1" colspan="1"
+                                                        aria-sort="ascending"
+                                                        aria-label="Order #: activate to sort column descending"
+                                                        style="width: 59.6875px;">Bin
+                                                        #</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="order-listing"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Customer: activate to sort column ascending"
+                                                        style="width: 74.6562px;">Data
+                                                        Compra</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="order-listing"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Ship to: activate to sort column ascending"
+                                                        style="width: 66.5156px;">Método.P</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="order-listing"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Base Price: activate to sort column ascending"
+                                                        style="width: 82.6094px;">Valo
+                                                        Total</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="order-listing"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Purchased Price: activate to sort column ascending"
+                                                        style="width: 122.25px;">Valo
+                                                        Pago</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="order-listing"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Status: activate to sort column ascending"
+                                                        style="width: 68.3281px;">Status</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="order-listing"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Actions: activate to sort column ascending"
+                                                        style="width: 207.953px;">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="odd">
+                                                    <td class="sorting_1">WD-61</td>
+                                                    <td>12/02/2023</td>
+                                                    <td>PIX</td>
+                                                    <td>$1500</td>
+                                                    <td>$3200</td>
+                                                    <td>
+                                                        <label class="badge badge-info">Autorizado</label>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <button class="btn btn-light mx-2">
+                                                            <i class="mdi mdi-eye text-primary"></i>View
+                                                        </button>
+                                                        <button class="btn btn-light">
+                                                            <i class="mdi mdi-close text-danger"></i>Remove
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="even">
+                                                    <td class="sorting_1">WD-62</td>
+                                                    <td>02/02/2023</td>
+                                                    <td>PIX</td>
+                                                    <td>$4500</td>
+                                                    <td>$7500</td>
+                                                    <td>
+                                                        <label class="badge badge-danger">Vencido</label>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <button class="btn btn-light mx-2">
+                                                            <i class="mdi mdi-eye text-primary"></i>View
+                                                        </button>
+                                                        <button class="btn btn-light">
+                                                            <i class="mdi mdi-close text-danger"></i>Remove
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="odd">
+                                                    <td class="sorting_1">WD-63</td>
+                                                    <td>12/02/2021</td>
+                                                    <td>PIX</td>
+                                                    <td>$2100</td>
+                                                    <td>$6300</td>
+                                                    <td>
+                                                        <label class="badge badge-success">Pago</label>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <button class="btn btn-light mx-2">
+                                                            <i class="mdi mdi-eye text-primary"></i>View
+                                                        </button>
+                                                        <button class="btn btn-light">
+                                                            <i class="mdi mdi-close text-danger"></i>Remove
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="even">
+                                                    <td class="sorting_1">WD-64</td>
+                                                    <td>12/02/2003</td>
+                                                    <td>PIX</td>
+                                                    <td>$1100</td>
+                                                    <td>$7300</td>
+                                                    <td>
+                                                        <label class="badge badge-warning">Em
+                                                            Análise</label>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <button class="btn btn-light mx-2">
+                                                            <i class="mdi mdi-eye text-primary"></i>View
+                                                        </button>
+                                                        <button class="btn btn-light">
+                                                            <i class="mdi mdi-close text-danger"></i>Remove
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-5">
+                                        <div class="dataTables_info m-2" id="order-listing_info" role="status"
+                                            aria-live="polite">Showing 1 to 10
+                                            of 20 entries</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
