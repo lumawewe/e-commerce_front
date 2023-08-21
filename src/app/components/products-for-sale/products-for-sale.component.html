@@ -1,1 +1,52 @@
-table
+<div class="page-header">
+    <h3 class="page-title"> Produtos </h3>
+</div>
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    FILTROS
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <h4 class="card-title">Produtos CC</h4>
+                   
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Bin</th>
+                            <th>Level.</th>
+                            <th>Pais</th>
+                            <th>Banco</th>
+                            <th>Valor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let item of listaProdutos">
+                            <td>{{item.bin}}</td>
+                            <td>{{item.level}}</td>
+                            <td>{{item.pais}}</td>
+                            <td>{{item.banco}}</td>
+                            <td>R$ {{item.preco}}</td>
+                            <td><label class="badge badge-success">Comprar</label></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

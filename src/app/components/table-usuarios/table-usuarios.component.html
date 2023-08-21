@@ -1,0 +1,35 @@
+<div class="page-header">
+    <h3 class="page-title"> Usuarios Cadastrados </h3>
+</div>
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th> Nome </th>
+                                    <th> Email </th>
+                                    <th> Saldo </th>
+                                    <th> Data Criacao </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of listUser">
+                                    <td>{{item.nome}}</td>
+                                    <td>{{item.email}}</td>
+                                    <td>{{item.conta.saldo}}</td>
+                                    <td>{{item.dtCricao}}</td>     
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

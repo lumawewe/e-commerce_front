@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+//HTTP
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +30,10 @@ import { ModalEditarComponent } from './components/list-register-product/modal-e
 import { FinalizarCompraComponent } from './components/nav-bar/finalizar-compra/finalizar-compra.component';
 import { ContaComponent } from './pages/conta/conta.component';
 import { CarteiraComponent } from './pages/carteira/carteira.component';
+import { TableUsuariosComponent } from './components/table-usuarios/table-usuarios.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -56,11 +62,13 @@ import { CarteiraComponent } from './pages/carteira/carteira.component';
     ModalEditarComponent,
     FinalizarCompraComponent,
     ContaComponent,
-    CarteiraComponent
+    CarteiraComponent,
+    TableUsuariosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
