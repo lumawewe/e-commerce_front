@@ -7,13 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'e-commerce';
-  public inAcesso: boolean  = true;
+  public inAcesso: boolean = true;
 
-  public inMapa: boolean  = false;
-  public inMessage: boolean  = false;
-  public inProductList: boolean = false;
-  public inProductDetail: boolean = false;
- 
-  public inHistorySaldo: boolean = false;
-  public inSaldo : boolean =  false;
+  public inMapa: boolean = true;
+  public inMessage: boolean = true;
+  public inProductList: boolean = true;
+  public inProductDetail: boolean = true;
+
+  public inHistorySaldo: boolean = true;
+  public inSaldo: boolean = true;
+
+
+  porEnquantoLogar(acesso: boolean) {
+    if (acesso == true) {
+      this.inAcesso = acesso;
+    } else {
+      this.inAcesso = false;
+    }
+  }
 }

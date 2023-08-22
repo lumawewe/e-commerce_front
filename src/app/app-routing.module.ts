@@ -25,7 +25,7 @@ const routes: Routes = [
   { path: 'finalizar-compra' , component: FinalizarCompraComponent},
   { path: 'login' , component: ContaComponent},
   { path: 'carteira' , component: CarteiraComponent},
-  { path: 'conta' , component: TableUsuariosComponent}
+  { path: 'userRegister' , component: TableUsuariosComponent}
 ];
 
 @NgModule({

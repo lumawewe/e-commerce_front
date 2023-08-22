@@ -31,6 +31,7 @@ import { FinalizarCompraComponent } from './components/nav-bar/finalizar-compra/
 import { ContaComponent } from './pages/conta/conta.component';
 import { CarteiraComponent } from './pages/carteira/carteira.component';
 import { TableUsuariosComponent } from './components/table-usuarios/table-usuarios.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -68,7 +69,8 @@ import { TableUsuariosComponent } from './components/table-usuarios/table-usuari
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
