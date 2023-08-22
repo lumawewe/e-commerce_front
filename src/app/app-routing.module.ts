@@ -12,6 +12,8 @@ import { FinalizarCompraComponent } from './components/nav-bar/finalizar-compra/
 import { ContaComponent } from './pages/conta/conta.component';
 import { CarteiraComponent } from './pages/carteira/carteira.component';
 import { TableUsuariosComponent } from './components/table-usuarios/table-usuarios.component';
+import { PagamentoComponent } from './components/pagamento/pagamento.component';
+import { HistoricoComprasComponent } from './components/historico-compras/historico-compras.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,9 +25,11 @@ const routes: Routes = [
   { path: 'termos' , component: TermosComponent},
   { path: 'cadastrar-produto' , component: CadastrarProdutoComponent},
   { path: 'finalizar-compra' , component: FinalizarCompraComponent},
-  { path: 'login' , component: ContaComponent},
+  { path: 'conta' , component: ContaComponent},
   { path: 'carteira' , component: CarteiraComponent},
-  { path: 'userRegister' , component: TableUsuariosComponent}
+  { path: 'userRegister' , component: TableUsuariosComponent},
+  { path: 'pagamento' , component: PagamentoComponent},
+  { path: 'history' , component: HistoricoComprasComponent}
 ];
 
 @NgModule({

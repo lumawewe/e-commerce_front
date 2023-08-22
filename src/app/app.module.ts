@@ -32,7 +32,9 @@ import { ContaComponent } from './pages/conta/conta.component';
 import { CarteiraComponent } from './pages/carteira/carteira.component';
 import { TableUsuariosComponent } from './components/table-usuarios/table-usuarios.component';
 import { FormsModule } from '@angular/forms';
-
+import { PagamentoComponent } from './components/pagamento/pagamento.component';
+import { HistoricoComprasComponent } from './components/historico-compras/historico-compras.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 
@@ -64,13 +66,16 @@ import { FormsModule } from '@angular/forms';
     FinalizarCompraComponent,
     ContaComponent,
     CarteiraComponent,
-    TableUsuariosComponent
+    TableUsuariosComponent,
+    PagamentoComponent,
+    HistoricoComprasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
