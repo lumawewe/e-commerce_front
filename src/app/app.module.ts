@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+
 //HTTP
 import {HttpClientModule} from '@angular/common/http';
 
@@ -35,6 +37,7 @@ import { FormsModule } from '@angular/forms';
 import { PagamentoComponent } from './components/pagamento/pagamento.component';
 import { HistoricoComprasComponent } from './components/historico-compras/historico-compras.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { Erro404Component } from './pages/erro404/erro404.component';
 
 
 
@@ -68,14 +71,16 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     CarteiraComponent,
     TableUsuariosComponent,
     PagamentoComponent,
-    HistoricoComprasComponent
+    HistoricoComprasComponent,
+    Erro404Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ModalModule
+    ModalModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -16,15 +16,15 @@
 <li class="nav-item nav-category">
     <span class="nav-link">Navegar</span>
 </li>
-<li class="nav-item menu-items">
-    <a class="nav-link" href="#" routerLink="/">
+<li class="nav-item menu-items" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+    <a class="nav-link" href="#" routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
         <span class="menu-icon">
             <i class="mdi mdi-speedometer"></i>
         </span>
         <span class="menu-title">Dashboard</span>
     </a>
 </li>
-<li class="nav-item menu-items">
+<li class="nav-item menu-items" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
     <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
         <span class="menu-icon">
             <i class="mdi mdi-laptop"></i>
@@ -34,20 +34,20 @@
     </a>
     <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" routerLink="/buy" href="#">Comprar</a></li>
+            <li class="nav-item"> <a class="nav-link" routerLink="/buy" href="#" [routerLinkActive]="['active']">Comprar</a></li>
         </ul>
     </div>
 </li>
-<li class="nav-item menu-items">
-    <a class="nav-link" href="#" routerLink="/carteira">
+<li class="nav-item menu-items" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+    <a class="nav-link" href="#" routerLink="/carteira" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
         <span class="menu-icon">
             <i class="mdi mdi-square-inc-cash"></i>
         </span>
         <span class="menu-title">Carteira</span>
     </a>
 </li>
-<li class="nav-item menu-items">
-    <a class="nav-link" href="#" routerLink="/history">
+<li class="nav-item menu-items" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+    <a class="nav-link" href="#" routerLink="/history" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
         <span class="menu-icon">
             <i class="mdi mdi-table-large"></i>
         </span>
@@ -62,8 +62,8 @@
         <span class="menu-title">Relatorios</span>
     </a>
 </li>-->
-<li class="nav-item menu-items">
-    <a class="nav-link" href="#" routerLink="/conta">
+<li class="nav-item menu-items" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+    <a class="nav-link" href="#" routerLink="/conta" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
         <span class="menu-icon">
             <i class="mdi mdi-contacts"></i>
         </span>
@@ -80,24 +80,24 @@
     </a>
     <div class="collapse" id="auth">
         <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="#" routerLink="/cadastrar-produto"> Cadastar Produto </a>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"> <a class="nav-link" href="#" routerLink="/cadastrar-produto" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"> Cadastar Produto </a>
             </li>
-            <li class="nav-item"> <a class="nav-link" href="#"> Banco Assas </a>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"> <a class="nav-link" href="#" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"> Banco Assas </a>
             </li>
-            <li class="nav-item"> <a class="nav-link" href="#" routerLink="/userRegister"> Usuarios Cadastrados </a>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"> <a class="nav-link" href="#" routerLink="/userRegister" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"> Usuarios Cadastrados </a>
             </li>
         </ul>
     </div>
 </li>
-<li class="nav-item menu-items">
-    <a class="nav-link" href="#">
+<li class="nav-item menu-items" routerLinkActive="active bold" [routerLinkActiveOptions]="{ exact: true }">
+    <a class="nav-link" href="#" routerLink="/termos" [routerLinkActive]="['active']">
         <span class="menu-icon">
             <i class="mdi mdi-file-document-box"></i>
         </span>
-        <span class="menu-title" routerLink="/termos">Termos/Erros</span>
+        <span class="menu-title">Termos/Erros</span>
     </a>
 </li>
-<li class="nav-item menu-items">
+<li class="nav-item menu-items" routerLinkActive="active bold" [routerLinkActiveOptions]="{ exact: true }">
     <a class="nav-link" href="#">
         <span class="menu-icon">
             <i class="mdi mdi-telegram"></i>
