@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+// Importe a fonte Montserrat que você incorporou
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+// Defina a variável para a fonte Montserrat
+$font-family-montserrat: 'Montserrat', sans-serif;
+
+// Aplique a fonte Montserrat ao corpo do documento ou a outros elementos conforme necessário
+body {
+  font-family: $font-family-montserrat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-montserrat;
+}
+
+// Outras regras de estilo do seu projeto
