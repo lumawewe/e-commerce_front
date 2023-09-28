@@ -6,11 +6,11 @@
         <div class="card">
             <div class="card-body">
                 <div class="card-title">
-                    <form  #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+                    <form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
                         <div class="row">
                             <div class="col-6 form-group">
                                 <label for="nome">Pesquisar:</label>
-                                <input type="text" class="form-control" id="nome" name="nome" 
+                                <input type="text" class="form-control" id="nome" name="nome"
                                     [(ngModel)]="filtroUsuario.nome">
                             </div>
                             <div class="col-6 form-group">
@@ -21,14 +21,14 @@
 
                             <div class="col-3 form-group">
                                 <label for="dtInicio">Inicio:</label>
-                                <input type="date" class="form-control" id="dtInicio" name="dtInicio" placeholder="12/01/2023"
-                                    [(ngModel)]="filtroUsuario.dtInicio" required>   
+                                <input type="date" class="form-control" id="dtInicio" name="dtInicio"
+                                    placeholder="12/01/2023" [(ngModel)]="filtroUsuario.dtInicio" required>
                             </div>
                             <div class="col-3 form-group">
                                 <label for="dtFim">Fim:</label>
                                 <input type="date" class="form-control" id="dtFim" name="dtFim" placeholder="12/01/2023"
-                                    [(ngModel)]="filtroUsuario.dtFim" required>   
-                                    
+                                    [(ngModel)]="filtroUsuario.dtFim" required>
+
                             </div>
                         </div>
 
@@ -62,28 +62,14 @@
                                     <td>R$ 12,00</td>
                                     <td>21/08/2023</td>
                                     <td>
-                                        <a href="#">
-                                            <div class="badge badge-outline-warning mx-2">Editar</div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="badge badge-outline-danger">Deletar</div>
-                                        </a>
+                                        <button class="btn btn-outline-warning mx-2" type="button" data-toggle="modal"
+                                            data-target="#exampleModal">Editar</button>
+
+                                        <button class="btn btn-outline-danger mx-2" type="button" data-toggle="modal"
+                                            data-target="#exampleModal2">Deletar</button>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>Marcos</td>
-                                    <td>Bras3</td>
-                                    <td>R$ 200,00</td>
-                                    <td>21/08/2023</td>
-                                    <td>
-                                        <a href="#">
-                                            <div class="badge badge-outline-warning mx-2">Editar</div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="badge badge-outline-danger">Deletar</div>
-                                        </a>
-                                    </td>
-                                </tr>
+                            
                                 <tr *ngFor="let item of listUser">
                                     <td>{{item.nome}}</td>
                                     <td>{{item.senha}}</td>
@@ -95,6 +81,66 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">EDITANDO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleName">Nome</label>
+                        <input type="email" class="form-control text-light" id="exampleName"
+                            placeholder="Jorge">
+                    </div>
+                    <div class="form-group">
+                        <label for="examplePassword">Senha</label>
+                        <input type="email" class="form-control text-light" id="examplePassword"
+                            placeholder="12345">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSaldo">Saldo</label>
+                        <output type="email" class="form-control text-light" id="exampleSaldo"> R$ 100,00</output>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-outline-success">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">USER: Jorge</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="font-weight-bold">Deseja realmente excluir o usuario?</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-outline-danger">Deletar</button>
             </div>
         </div>
     </div>

@@ -7,98 +7,40 @@
         <div class="row">
           <div class="col-12">
             <div class="table-responsive">
-              <div
-                id="order-listing_wrapper"
-                class="dataTables_wrapper dt-bootstrap4 no-footer"
-              >
+              <div id="order-listing_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
                 <div class="row">
                   <div class="col-sm-12">
-                    <table
-                      id="order-listing"
-                      class="table dataTable no-footer"
-                      cellspacing="0"
-                      width="100%"
-                      aria-describedby="order-listing_info"
-                      style="width: 100%"
-                    >
+                    <table id="order-listing" class="table dataTable no-footer" cellspacing="0" width="100%"
+                      aria-describedby="order-listing_info" style="width: 100%">
                       <thead>
                         <tr class="bg-dark text-white">
-                          <th
-                            class="sorting sorting_asc"
-                            tabindex="0"
-                            aria-controls="order-listing"
-                            rowspan="1"
-                            colspan="1"
-                            aria-sort="ascending"
-                            aria-label="Order #: activate to sort column descending"
-                            style="width: 59.6875px"
-                          >
+                          <th class="sorting sorting_asc" tabindex="0" aria-controls="order-listing" rowspan="1"
+                            colspan="1" aria-sort="ascending" aria-label="Order #: activate to sort column descending"
+                            style="width: 59.6875px">
                             Bin #
                           </th>
-                          <th
-                            class="sorting"
-                            tabindex="0"
-                            aria-controls="order-listing"
-                            rowspan="1"
-                            colspan="1"
-                            aria-label="Customer: activate to sort column ascending"
-                            style="width: 74.6562px"
-                          >
+                          <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1"
+                            aria-label="Customer: activate to sort column ascending" style="width: 74.6562px">
                             Data Compra
                           </th>
-                          <th
-                            class="sorting"
-                            tabindex="0"
-                            aria-controls="order-listing"
-                            rowspan="1"
-                            colspan="1"
-                            aria-label="Ship to: activate to sort column ascending"
-                            style="width: 66.5156px"
-                          >
+                          <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1"
+                            aria-label="Ship to: activate to sort column ascending" style="width: 66.5156px">
                             Método.P
                           </th>
-                          <th
-                            class="sorting"
-                            tabindex="0"
-                            aria-controls="order-listing"
-                            rowspan="1"
-                            colspan="1"
-                            aria-label="Base Price: activate to sort column ascending"
-                            style="width: 82.6094px"
-                          >
+                          <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1"
+                            aria-label="Base Price: activate to sort column ascending" style="width: 82.6094px">
                             Valo Total
                           </th>
-                          <th
-                            class="sorting"
-                            tabindex="0"
-                            aria-controls="order-listing"
-                            rowspan="1"
-                            colspan="1"
-                            aria-label="Purchased Price: activate to sort column ascending"
-                            style="width: 122.25px"
-                          >
+                          <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1"
+                            aria-label="Purchased Price: activate to sort column ascending" style="width: 122.25px">
                             Valo Pago
                           </th>
-                          <th
-                            class="sorting"
-                            tabindex="0"
-                            aria-controls="order-listing"
-                            rowspan="1"
-                            colspan="1"
-                            aria-label="Status: activate to sort column ascending"
-                            style="width: 68.3281px"
-                          >
+                          <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1"
+                            aria-label="Status: activate to sort column ascending" style="width: 68.3281px">
                             Status
                           </th>
-                          <th
-                            class="sorting"
-                            tabindex="0"
-                            aria-controls="order-listing"
-                            rowspan="1"
-                            colspan="1"
-                            aria-label="Actions: activate to sort column ascending"
-                            style="width: 207.953px"
-                          >
+                          <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1"
+                            aria-label="Actions: activate to sort column ascending" style="width: 207.953px">
                             Ações
                           </th>
                         </tr>
@@ -111,12 +53,11 @@
                           <td>$1100</td>
                           <td>$7300</td>
                           <td>
-                            <label class="badge badge-warning"
-                              >Em Análise</label
-                            >
+                            <label class="badge badge-success">Pago</label>
                           </td>
                           <td class="text-end">
-                            <button class="btn btn-light mx-2" type="button" data-toggle="modal" data-target="#exampleModal">
+                            <button class="btn btn-light mx-2" type="button" data-toggle="modal"
+                              data-target="#exampleModal">
                               <i class="mdi mdi-eye text-primary"></i>
                               View
                             </button>
@@ -128,12 +69,7 @@
                 </div>
                 <div class="row">
                   <div class="col-sm-12 col-md-5">
-                    <div
-                      class="dataTables_info m-2"
-                      id="order-listing_info"
-                      role="status"
-                      aria-live="polite"
-                    >
+                    <div class="dataTables_info m-2" id="order-listing_info" role="status" aria-live="polite">
                       Showing 1 to 10 of 20 entries
                     </div>
                   </div>
@@ -147,23 +83,29 @@
   </div>
 </div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">WD-64</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-         <!-- <button type="button" class="btn btn-primary">Save changes</button>-->
-        </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">WD-64</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="font-weight-bold">ID:</p>
+        <output>1200797</output>
+        <br/>
+        <p class="font-weight-bold">CC:</p>
+        <output>4984078134070000|06|2025|811</output>
+        <output>MARIASAALMEIDA|202.685.212-04|28|10|1965</output>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button>-->
       </div>
     </div>
   </div>
+</div>
