@@ -8,8 +8,10 @@
             <div class="card-body">
                 <div class="card-title">
                     <div class="template-demo">
-                        <button type="button" class="btn btn-info btn-fw">Depositar</button>
-                        <button type="button" class="btn btn-info btn-fw" disabled>Sacar</button>
+                        <button type="button" class="btn btn-outline-info btn-fw" data-toggle="modal" data-target="#exampleModalCenter">
+                            Despositar
+                        </button>
+                        <button type="button" class="btn btn-info btn-fw" disabled>Sacar (Em Desenvolvimento)</button>
                     </div>
                 </div>
             </div>
@@ -88,11 +90,86 @@
         </div>
     </div>
 
-    <div class="card">
-
-
-        <div id="carrinho3" class="form-horizontal">
-
-        </div>
-    </div>
 </div>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Depositar</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Valor</label>
+                  <input type="text" class="form-control text-white" id="exampleFormControlInput1" placeholder="R$ 10">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Forma Pagamento</label>
+                  <select class="form-control text-white" id="exampleFormControlSelect1">
+                    <option>Selecione</option>
+                    <option value="PIX">PIX</option>
+                  </select>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#qrCodeAdicionar" (click)="startCountdown()">Adicionar Saldo</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="qrCodeAdicionar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <form>
+
+                <div class="form-group text-center">
+                    <div class="timer">{{ minutes }}:{{ seconds }}</div>
+                    <label for="exampleFormControlInput1">Qr Code Pix:</label>
+                    <img height="200px" width="200px" class="img-fluid rounded mx-auto d-block" src="../../../assets/images/qrcode-pix.png" >
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Código QrCode:</label>
+                  <div class="form-group">
+                    <output type="text" class="form-control text-white" id="exampleFormControlInput1" placeholder="">
+                        62160512PAGAMENTO321630421A1
+                    </output>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Código da Transferência:</label>
+                    <output type="text" class="form-control text-white" id="exampleFormControlInput1" placeholder="447.204.654-69">PAGAMENTO321</output>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Tipo de Chave:</label>
+                    <output type="text" class="form-control text-white" id="exampleFormControlInput1" placeholder="447.204.654-69">CPF</output>
+                  </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Valor:</label>
+                    <output type="text" class="form-control text-white" id="exampleFormControlInput1" placeholder="">R$ 100</output>
+                  </div>
+               
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-outline-success">Adicionar Saldo</button>
+        </div>
+      </div>
+    </div>
+  </div>
